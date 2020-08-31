@@ -1,0 +1,66 @@
+	#Instalndo o Dev-essentials -Bibliotecas | git | vim-gtk |curl  
+sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk curl
+#temas 
+cd /tmp 
+git clone https://github.com/daniruiz/flat-remix-gtk #.themes 
+git clone https://github.com/daniruiz/flat-remix #.icons 
+	#Criar Pasta com parametro -p 
+mkdir -p ~/.icons && mkdir -p ~/.themes
+sudo cp -r /tmp/flat-remix-gtk/Flat-Remix* ~/.themes 
+sudo cp -r /tmp/flat-remix/Flat-Remix* ~/.icons
+	#instalndo um background na tela de login 
+	#instalndo o repositorio com o script 
+wget github.com/thiggy01/ubuntu-20.04-change-gdm-background/raw/master/ubuntu-20.04-change-gdm-background 
+ 	#Dando permissaões de execussão 
+chmod +x ubuntu-20.04-change-gdm-background 
+	#Alterando o Background 
+sudo ./ubuntu-20.04-change-gdm-background /home/melkizedelk/Downloads/Backgrouds/pdf.jpg
+	#instalr o tweak-tool
+sudo apt install gnome-tweaks-tool
+	#Instalar asdf 
+	#baixar o repositorio 
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
+	#Instalar Linguagem de programação 
+	#Baixar o plugin asdf da Linguagem 
+asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
+	#listar os plugins asdf 
+asdf plugin-list 
+	#listar as versões disponiveis para aquela linguagem 
+asdf list-all ruby 
+	#Instalar a versão 
+asdf install ruby 
+	#Adicionar ao scripts ao bashrc ou zshrc
+cd ~
+vim .bashrc
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+	#Instalar yadr apperence user:skwp
+
+	#Instalando o tlix  zsh-zshell e vim-gtk 
+sudo apt install tilix zsh vim-gtk -y 
+	#Download do ppa do Qbittorrent
+ 
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable 
+sudo apt update 
+sudo apt install qbittorent
+instalar o openssh 
+	sudo apt install openssh-server -y
+	sudo ufw app list 
+	sudo ufw allow OpenSSH  
+	halt --reboot 
+instalar o apache 
+	sudo apt install apache2 apache2-utils -y 
+configurar o openssh no apache 
+	sudo ufw allow in "Apache Full" 
+instalando o mysql-cummunity-server com a chave root  
+  	wget -c https://repo.mysql.com//mysql-apt-config... 
+	sudo dpkg -i mysql-apt-config... -y
+	sudo apt update 
+	sudo apt install mysql-community-server -y  
+instalando o phpmyadmin 
+	sudo apt install php libapache2-mod-php  apache2-utils php-pear php-dev libmcrypt-dev php-mysql -y && sudo pecl install mcrypt  && sudo apt install phpmyadmin -y  
+		
+ 
+	 
+
+

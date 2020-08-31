@@ -1,0 +1,22 @@
+Instalação do sistema opreracional # Feita com sucesso 
+	Nota: Problema do Grub
+		Grub esta aprecendo quando não deveria 
+	Nota: Erros aprecendo 
+		o ubunto teve um erro inesperado 
+Instalação do ambiente de trabalho # 
+	instalar asdf  
+Instalação da personalização do sistema # 'temas,colorização,atalhos,preferencias' -concluido  
+Instalação de aplicaivos 
+	spotify -concluido 
+	google chrome - concluido 
+	assistir video do akitaonrails para saber oque instalar e criar
+	um sript para facilitar caso queira formatar o sistema denovo 
+sem paciencia preciso de paciencia 
+Criando um Script - em andamento 
+Problema do nodejs - chave gpg -concluido  
+qbittorrent- instalado 
+oracleVirtualBox- instalado 
+	Fazer Teste na maquina virtual para depois implementar as 
+	alterações na maquina principal 
+	Instalar o LAMP na maquna virtual 
+	
