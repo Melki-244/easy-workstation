@@ -59,7 +59,8 @@
     sudo apt install mysql-community-server -y 
     #Instalando PhpMyAdmin 
     sudo apt install php libapache2-mod-php  apache2-utils php-pear php-dev libmcrypt-dev php-mysql -y && sudo pecl install mcrypt  && sudo apt install phpmyadmin -y
-
+    zezim pimba do burro 
+    
 
 
 
