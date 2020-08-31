@@ -1,0 +1,2 @@
+# easy-workstation
+workstation shortcuts  
