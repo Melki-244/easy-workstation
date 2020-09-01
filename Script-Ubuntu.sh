@@ -37,12 +37,14 @@
    #=================Ferramentas de Desenvolvimento==============
    #Instando o asdf 
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
-    echo ". $HOME/.asdf/asdf.sh" >>~/.bashrc
-    echo ". $HOME/.asdf/completions/asdf.bash" >>~/.bashrc
+    echo '. $HOME/.asdf/asdf.sh' >>~/.bashrc
+    echo '. $HOME/.asdf/completions/asdf.bash' >>~/.bashrc
     #Instalando Ruby 
-    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-    asdf install ruby 2.7.1
-    asdf global ruby 2.7.1
+    asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git 
+    asdf list-all ruby
+    read -p 'Versão do Ruby a ser Instalada?:' -n 10
+        asdf install ruby $REPLY
+        asdf global ruby $REPLY
     #Instalando o OpenSSH 
     sudo apt install openssh-server -y 
     sudo ufw enable 
@@ -54,12 +56,49 @@
     #Instalando Mysql
     read -p 'Qual é a Versão do Mysql a ser Instalada?:' -n 10 
     wget -c https://repo.mysql.com//mysql-apt-config_"$REPLY"_all.deb
-    sudo dpkg -i mysql-apt-config_"$REPLY"_all.deb -y
+    sudo dpkg -i mysql-apt-config_"$REPLY"_all.deb 
     sudo apt update 
     sudo apt install mysql-community-server -y 
     #Instalando PhpMyAdmin 
     sudo apt install php libapache2-mod-php  apache2-utils php-pear php-dev libmcrypt-dev php-mysql -y && sudo pecl install mcrypt  && sudo apt install phpmyadmin -y
-    zezim pimba do burro 
+    #Instalando O Yadr-Oh-My-zsh-Skwp
+    sudo apt install tilix tmux -y 
+    sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh `"
+    #Configurando o zsh para asdf 
+    echo '. $HOME/.asdf/asdf.sh' >>~/.zshrc
+    echo '. $HOME/.asdf/completions/asdf.bash' >>~/.zshrc
+    #Instalando Programas Personalizados 
+    #Google 
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo apt update 
+    sudo apt install ./google-chrome-stable_current_amd64.deb
+    read -p 'Instalar Spotify? (y/n):' -n 1
+      if [ "$REPLY" == "y" ]; then
+        sudo snap install spotify -y 
+      fi 
+    read -p 'Instalar Virtual-Box? (y/n):' -n 1
+      if [ "$REPLY" == "y" ]; then
+        sudo apt install virtualbox -y 
+      fi
+    
+    read -p 'Instalar Qbittorrent? (y/n):' -n 1
+      if [ "$REPLY" == "y" ]; then
+        sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable 
+        sudo apt update 
+        sudo apt install qbittorent -y 
+      fi
+      exit 
+
+      
+
+
+
+
+
+      
+    
+
+
     
 
 
