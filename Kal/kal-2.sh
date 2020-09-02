@@ -1,4 +1,10 @@
 
+    echo '==============Instalndo o Dev-essentials -Bibliotecas | git | vim-gtk |curl=========='
+    sudo apt install build-essential default-jdk libssl-dev exuberant-ctags ncurses-term ack-grep silversearcher-ag fontconfig imagemagick libmagickwand-dev software-properties-common git vim-gtk curl -y 
+    echo '=================================Google==============================='
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    sudo apt update 
+    sudo apt install ./google-chrome-stable_current_amd64.deb
     echo '======================Personalização=======================' 
     echo '==============================Instalando Tema Flat-Remix=======================================' 
     cd /tmp
@@ -43,3 +49,4 @@
     echo '==========================Configurando o $PATH========================='
     echo '. $HOME/.asdf/asdf.sh' >>~/.zshrc
     echo '. $HOME/.asdf/completions/asdf.bash' >>~/.zshrc
+

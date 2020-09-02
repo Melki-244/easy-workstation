@@ -25,7 +25,7 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0-rc1
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 	#listar os plugins asdf 
 asdf plugin-list 
-	#listar as versões disponiveis para aquela linguagem 
+    #listar as versões disponiveis para aquela linguagem 
 asdf list-all ruby 
 	#Instalar a versão 
 asdf install ruby 
