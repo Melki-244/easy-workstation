@@ -1,0 +1,3 @@
+mudar proprietario de /var/www/html
+que esta padrao root 
+
