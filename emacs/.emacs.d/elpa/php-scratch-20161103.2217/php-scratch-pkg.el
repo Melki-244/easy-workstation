@@ -1,0 +1,2 @@
+;;; Generated package description from /root/.emacs.d/elpa/php-scratch-20161103.2217/php-scratch.el  -*- no-byte-compile: t -*-
+(define-package "php-scratch" "20161103.2217" "A scratch buffer to interactively evaluate php code" '((emacs "24.3") (s "1.11.0") (php-mode "1.17.0")) :commit "3aa66d1d53b84b779374edff7a7e6b5f2cd7575d" :authors '(("Tijs Mallaerts" . "tijs.mallaerts@gmail.com")) :maintainer '("Tijs Mallaerts" . "tijs.mallaerts@gmail.com"))
